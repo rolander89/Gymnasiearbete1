@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>NIRO</title>
+  <link rel="stylesheet" href="1framsida.css" />
+</head>
+<body>
+ <div id="Klassrum"><img id="klass" src="klass.jpg"></div>
+  <div id="header">
+    <ul >
+	
+     <li><a href="1Framsida.html">Startsida</a></li>
+     <li onclick="location.href='2nyttklassrum.php'"><a href="#Nyttklassrum">Nytt klassrum</a></li>
+	 <li onclick="location.href=''"><a href="#Minaklassrum">Mina klassrum</a></li>
+     <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+
+     
+	 <li style="float:right"><a class="active" href="#Hjälp">Hjälp</a></li>
+    </ul>
+
+   </div> 
+       <div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="login.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+
+    <div class="container">
+      <label for="username"><b>Username</b></label>
+      <input type="text" placeholder="username" name="username" required>
+
+      <label for="password"><b>Lösenord</b></label>
+      <input type="password" placeholder="Password" name="password" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Kom ihåg
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+	
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+	  <span style="float:right" class="psw">Registrera dig <a href="registration1.php">här!</a></span><br /><br />
+      <span style="float:right" class="rgr">Glömt <a href="#">lösenord?</a></span><br />
+    </div>
+  </form>
+  
+</div>
+
+	   <div id="Titel"><center><h1>Välkommen till din virtuella klass</h1></center> </div>
+	  
+	   <div id="container">
+	   <iframe src="The Sidemen falling over for 3 minutes straight.mp4" name="iframe"></iframe></div><br />
+	   
+	   
+	   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+</script>
+
+</body>	   
+</html>
+  
+  
+  
+  
