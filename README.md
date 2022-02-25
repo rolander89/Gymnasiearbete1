@@ -1,1 +1,1 @@
-# Gymnasiearbete1
+Lägg alla filer i ett och samma mapp.
