@@ -57,9 +57,7 @@ button {
   overflow: none;
   text-align: center;
   float: right;
-
   text-align: center;
-
   text-decoration: none;
   text-shadow: 2px 2px 4px #000000;
 }
@@ -316,20 +314,22 @@ main
 {
 	float: right;
 	height: 550px;
-	width: 87.5%;
-	border: black solid 5px;
+	width: 87%;
+	border: black solid 4px;
 	position: relative;
-	
+	padding-top: px;
+	top: 3px;
 	
 }
 
 img {
 
-  width: 1100px;
+  width: 100%;
   position: absolute;
-  right: 0px;
-  height: 550px;
+  height: 540px;
   z-index: -1;
+  padding: px;
+  left: 0px;
 }
 
 #klassrum
@@ -397,4 +397,7 @@ a {
 .signin {
   background-color: #f1f1f1;
   text-align: center;
+}
+#titel{
+	left: 50%;
 }
