@@ -63,6 +63,7 @@ include("auth_session.php");
 </main>
 
 </div>
+<button onclick="window.print()">Skriv ut</button>
 
    <script>
    function koords()
