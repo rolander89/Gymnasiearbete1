@@ -16,11 +16,12 @@ include("auth_session.php");
    <div id="header">
    
     <ul>
-     <li><a href="Framsida.php">Startsida</a></li>
+     <li><a href="Framsida.php" style="width:auto;">Startsida</a></li>
+	 <button onclick="window.print()" style="width:auto;">Skriv ut</button>
      <li onclick="location.href='file:///C:/Users/rha09/OneDrive/Skrivbord/Gymnasiearbete/Hemsidor/Nyttklassrum/2nyttklassrum.html#news'"><a href="#Nyttklassrum">Nytt klassrum</a></li>
-	 <li onclick="location.href=''"><a href="#Minaklassrum">Mina klassrum</a></li> 
-     <button onclick="location.href= 'loggaut.php'" style="width:auto;">Log out</button>	
+	 <button onclick="location.href= 'loggaut.php'" style="width:auto;">Log out</button>
 	 <li style="float:right"><a class="active" href="#Hjälp">Hjälp</a></li>
+
     </ul>
 	</div>
 
@@ -29,12 +30,11 @@ include("auth_session.php");
 
 
  <div id="container">
- <div id="Titel"><center><h1>Välkommen till ditt klassrum</h1></center> </div> 
+  <div id="Titel"><center><h1>Välkommen till ditt klassrum</h1></center></div>
 
 
 
 <div class="main">
-<img src="wood2.jpg" alt="wood2">
 
 <div class="mobel original ram" id="pappa">
 
@@ -58,12 +58,12 @@ include("auth_session.php");
 
 
 
-<main>
+<main> 
+ <img src="wood2.jpg" alt="wood2">
  <div id="klassrum"></div>
 </main>
 
 </div>
-<button onclick="window.print()">Skriv ut</button>
 
    <script>
    function koords()
