@@ -16,7 +16,7 @@ include("auth_session.php");
     <ul>
      <li><a href="Framsida.php">Startsida</a></li>
      <li onclick="location.href='2nyttklassrum.php'"><a href="#Nyttklassrum">Nytt klassrum</a></li>
-     <button onclick="location.href= 'loggaut.php'" style="width:auto;">Log out</button>
+     <button onclick="location.href= 'loggaut.php'" style="width:auto;">Logga ut</button>
 
 
      
