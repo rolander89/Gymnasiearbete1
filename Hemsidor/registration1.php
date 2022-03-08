@@ -77,13 +77,13 @@ a {
         $username = stripslashes($_REQUEST['username']);
         //escapes special characters in a string
         $username = mysqli_real_escape_string($con, $username);
-      
         $password = stripslashes($_REQUEST['password']);
         $password = mysqli_real_escape_string($con, $password);
         
         $query    = "INSERT into `registrera2` (username, password)
                      VALUES ('$username', '". $password ."')";
         $result   = mysqli_query($con, $query);
+		
         if($result) {
             echo header('Location: Framsida.php');
         } else {
@@ -92,28 +92,30 @@ a {
                   <p class='link'>Click here to <a href='registration.php'>registration</a> again.</p>
                   </div>";
         }
-    } else {
+		
+    } else{
+		
 ?>
  <form action="" method="POST">
   <div class="container">
-    <h1>Register</h1>
-    <p>Please fill in this form to create an account.</p>
+    <h1>Registrera</h1>
+    <p>Fyll i användarnamn och lösenord.</p>
     <hr>
 
-    <label for="username"><b>Email</b></label>
-    <input type="text" placeholder="Enter username" name="username" id="username" required>
+    <label for="username"><b>Skriv användarnamn</b></label>
+    <input type="text" placeholder="skriv användarnamn" name="username" id="username" required>
 
     
-    <label for="password"><b>Enter Password</b></label>
-    <input type="password" placeholder="Enter Password" name="password" id="password" required>
+    <label for="password"><b>Skriv lösenord</b></label>
+    <input type="password" placeholder="skriv lösenord" name="password" id="password" required>
     <hr>
     <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
 
-    <button type="submit" class="registerbtn">Register</button>
+    <button type="submit" class="registerbtn">Registrera</button>
   </div>
   
   <div class="container signin">
-    <p>Already have an account? <a href="1Framsida.html">Sign in</a>.</p>
+    <p>Har du redan ett konto? <a href="1Framsida.html">Logga in</a>.</p>
   </div>
 </form>
 <?php
