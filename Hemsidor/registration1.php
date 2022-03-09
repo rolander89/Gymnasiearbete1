@@ -80,20 +80,26 @@ a {
         $password = stripslashes($_REQUEST['password']);
         $password = mysqli_real_escape_string($con, $password);
         
+        $sql_u = "SELECT * FROM registrera2 WHERE username='$username'";		
+	    $res_u = mysqli_query($con, $sql_u);
+		if (mysqli_num_rows($res_u) > 0) {
+  	    echo "<script>alert('användarnamn upptaget');";
+			echo 'window.location.href  = "registration1.php"';
+		echo '</script>';
+		}
+		else{
         $query    = "INSERT into `registrera2` (username, password)
                      VALUES ('$username', '". $password ."')";
+					 
         $result   = mysqli_query($con, $query);
 		
-        if($result) {
+       if($result) {
             echo header('Location: Framsida.php');
-        } else {
-            echo "<div class='form'>
-                  <h3>Required fields are missing.</h3><br/>
-                  <p class='link'>Click here to <a href='registration.php'>registration</a> again.</p>
-                  </div>";
-        }
+	   }
 		
-    } else{
+		}
+	}
+     else{
 		
 ?>
  <form action="" method="POST">
