@@ -17,10 +17,6 @@ include("auth_session.php");
      <li><a href="Framsida.php">Startsida</a></li>
      <li onclick="location.href='2nyttklassrum.php'"><a href="#Nyttklassrum">Nytt klassrum</a></li>
      <button onclick="location.href= 'loggaut.php'" style="width:auto;">Logga ut</button>
-
-
-     
-	 <li style="float:right"><a class="active" href="#Hjälp">Hjälp</a></li>
     </ul>
 
       
