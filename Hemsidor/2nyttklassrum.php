@@ -19,8 +19,7 @@ include("auth_session.php");
      <li><a href="Framsida.php" style="width:auto;">Startsida</a></li>
 	 <button onclick="window.print()" style="width:auto;">Skriv ut</button>
      <li onclick="location.href='file:///C:/Users/rha09/OneDrive/Skrivbord/Gymnasiearbete/Hemsidor/Nyttklassrum/2nyttklassrum.html#news'"><a href="#Nyttklassrum">Nytt klassrum</a></li>
-	 <button onclick="location.href= 'loggaut.php'" style="width:auto;">Log out</button>
-	 <li style="float:right"><a class="active" href="#Hjälp">Hjälp</a></li>
+	 <button onclick="location.href= 'loggaut.php'" style="width:auto;">Logga ut</button>
 
     </ul>
 	</div>
